@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 project(VFRRTPlanner)
 
 # 设置 C++ 标准
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 # 手动指定 OMPL 的安装路径
 # 请根据您的实际安装路径进行修改
@@ -32,11 +32,10 @@ include_directories(${EIGEN3_INCLUDE_DIR})
 # 如果使用 `find_package(Eigen3 REQUIRED)`，通常会自动设置 `EIGEN3_INCLUDE_DIR`
 
 # 添加可执行文件
-add_executable(VFRRTPlanner src/VFRRTPlanner.cpp)
+add_executable(VFRRTPlanner src/VFRRTPlanner_multi_2.cpp)
 
 # 链接 OMPL 库
 target_link_libraries(VFRRTPlanner ${OMPL_LIB} Eigen3::Eigen)
-
 # 如果 OMPL 依赖于其他库（如 Boost），请确保链接这些库
 # 例如：
 # find_package(Boost REQUIRED COMPONENTS system filesystem)

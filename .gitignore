@@ -4,3 +4,6 @@ VFRRT_Planner/.vscode
 VFRRT_Planner/build
 VFRRT_Planner/data
 VFRRT_Planner/frames
+VFRRT_Planner/path*
+post_process/output_data*
+post_process/energy_block_0-255.mat

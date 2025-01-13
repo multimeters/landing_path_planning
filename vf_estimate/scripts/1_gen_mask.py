@@ -60,7 +60,7 @@ if __name__ == "__main__":
     # Configuration Section
     INPUT_FILE_PATH = '../data/source/depth_a15_512x512.txt'  # Update this path
     OUTPUT_DIRECTORY = '../data/processing/mask'               # Desired output directory
-    THRESHOLD_VALUE = 0.75                         # Threshold for mask generation
+    THRESHOLD_VALUE = 0.1                       # Threshold for mask generation
     NUM_ROWS = 256                                  # Number of rows in input data
     NUM_COLS = 512                                  # Number of columns in input data
 
