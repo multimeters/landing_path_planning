@@ -49,7 +49,7 @@ X = reshape(x_vec, [num_x, num_y])';
 Y = reshape(y_vec, [num_x, num_y])';
 
 %% 2. 读取路径数据
-pathFile = '\\wsl.localhost\Ubuntu\/home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_14.txt';
+pathFile = '\\wsl.localhost\Ubuntu\/home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_31.txt';
 
 % 检查文件是否存在
 if ~isfile(pathFile)

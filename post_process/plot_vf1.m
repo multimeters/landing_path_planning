@@ -61,7 +61,7 @@ if isempty(pathFiles)
 end
 
 % 识别最优路径文件（假设为 path_37.txt）
-optimalPathFileName = 'path_37.txt';
+optimalPathFileName = 'path_36.txt';
 isOptimalPathAvailable = false;
 for i = 1:length(pathFiles)
     if strcmp(pathFiles(i).name, optimalPathFileName)
@@ -201,7 +201,7 @@ for i = 1:numPaths
     
     if strcmp(currentPathFile, optimalPathFileName)
         % 绘制最优路径（绿色加粗）
-        h = plot(pathX, pathY, 'g-', 'LineWidth', 2.5, 'DisplayName', '最优路径 (path37)');
+        h = plot(pathX, pathY, 'g-', 'LineWidth', 5, 'DisplayName', '最优路径 (path37)');
         
         % 标记最优路径的终点为最佳登陆点（绘制在采样点之后，确保在其上方）
         best_landing_x = pathX(end);

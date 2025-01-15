@@ -247,7 +247,7 @@ int main()
 
     // 设置规划器的参数
     double exploration = 0.1;                   // 探索参数
-    double initial_lambda = 100.1;             // 初始lambda参数
+    double initial_lambda = 5.1;             // 初始lambda参数
     unsigned int initial_lambda_samples = 1000000; // 初始lambda采样数
 
     // 遍历每个采样点，设置为目标并进行路径规划
@@ -277,7 +277,7 @@ int main()
         ss.getProblemDefinition()->clearSolutionPaths();
 
         // 尝试在指定时间内解决规划问题（例如，400秒）
-        ob::PlannerStatus solved = ss.solve(100.0);
+        ob::PlannerStatus solved = ss.solve(400.0);
 
         if (solved)
         {
