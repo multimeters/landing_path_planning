@@ -61,7 +61,7 @@ if isempty(pathFiles)
 end
 
 % 识别最优路径文件（假设为 path_37.txt）
-optimalPathFileName = 'path_36.txt';
+optimalPathFileName = 'path_15.txt';
 isOptimalPathAvailable = false;
 for i = 1:length(pathFiles)
     if strcmp(pathFiles(i).name, optimalPathFileName)
@@ -276,4 +276,4 @@ ylabel('Y 位置 (米)');
 hold off;
 
 % 可选：保存图像
-% saveas(gcf, 'all_paths_vector_depth_visualization.png'); % 如果需要保存图像，请取消注释
+ saveas(gcf, 'all_paths_vector_depth_visualization.png'); % 如果需要保存图像，请取消注释

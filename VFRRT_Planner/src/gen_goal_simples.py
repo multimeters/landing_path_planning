@@ -16,7 +16,7 @@ def read_depth_data(file_path, rows=256, cols=512):
         print(f"读取深度数据失败: {e}")
         raise
 
-def extract_contour(depth, level=0.75):
+def extract_contour(depth, level=0.0):
     """
     提取指定深度的等值线。
     返回轮廓的x和y坐标数组。

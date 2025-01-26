@@ -20,7 +20,7 @@
 #include <future>
 #include <mutex>
 #include <chrono>  // 用于测量程序运行时间
-
+#include <getopt.h>  // 用于解析命令行参数
 // 使用 OMPL 的命名空间简化代码
 namespace ob = ompl::base;
 namespace og = ompl::geometric;
@@ -223,7 +223,7 @@ PathPlanningResult planAndSavePath(
     bounds.setLow(0, 0.0);
     bounds.setHigh(0, 512.0);
     bounds.setLow(1, 0.0);
-    bounds.setHigh(1, 512.0);
+    bounds.setHigh(1, 400.0);
     space->as<ob::RealVectorStateSpace>()->setBounds(bounds);
 
     auto si = std::make_shared<ob::SpaceInformation>(space);
@@ -255,7 +255,7 @@ PathPlanningResult planAndSavePath(
     ss.setup();
 
     // ===== 5) 尝试在 400 秒内规划 =====
-    ob::PlannerStatus solved = ss.solve(400.0);
+    ob::PlannerStatus solved = ss.solve(500.0);
 
     if (solved)
     {
@@ -327,10 +327,10 @@ int main()
 
     // ===== 1) 读取向量场数据 =====
     Eigen::MatrixXd u_combined = loadMatrixFromFile(
-        "/home/lhl/share/rip/scripts/landing_path_planning/vf_estimate/data/output/vf/u_vf_normalized.txt",
+        "/home/lhl/share/rip/scripts/landing_path_planning/vf_estimate/data/output/vf/u_combined.txt",
         256, 512);
     Eigen::MatrixXd v_combined = loadMatrixFromFile(
-        "/home/lhl/share/rip/scripts/landing_path_planning/vf_estimate/data/output/vf/v_vf_normalized.txt",
+        "/home/lhl/share/rip/scripts/landing_path_planning/vf_estimate/data/output/vf/v_combined.txt",
         256, 512);
 
     if (u_combined.size() == 0 || v_combined.size() == 0)
@@ -398,10 +398,13 @@ int main()
             << "[Info] 程序开始运行\n";
 
     // ===== 6) 设置规划器的参数 =====
-    double exploration = 0.1;
-    double initial_lambda = 250.1;
+    
+    double exploration = 0.2;
+    std::cout << "exploration: " << exploration << std::endl;
+    double initial_lambda = 250.0;
+    std::cout << "initial_lambda: " << initial_lambda << std::endl;
     unsigned int initial_lambda_samples = 1000000;
-
+    std::cout << "initial_lambda_samples: " << initial_lambda_samples << std::endl;
     // ===== 7) 限制并发线程数 =====
     unsigned int maxConcurrentThreads = std::thread::hardware_concurrency();
     if (maxConcurrentThreads == 0) maxConcurrentThreads = 4;

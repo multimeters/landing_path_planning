@@ -32,7 +32,7 @@ include_directories(${EIGEN3_INCLUDE_DIR})
 # 如果使用 `find_package(Eigen3 REQUIRED)`，通常会自动设置 `EIGEN3_INCLUDE_DIR`
 
 # 添加可执行文件
-add_executable(VFRRTPlanner src/VFRRTPlanner_multi_3.cpp)
+add_executable(VFRRTPlanner src/VFRRTPlanner_multi_4.cpp)
 
 # 链接 OMPL 库
 target_link_libraries(VFRRTPlanner ${OMPL_LIB} Eigen3::Eigen)

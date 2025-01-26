@@ -13,16 +13,14 @@ import matplotlib.pyplot as plt
 # ----------------------------- 配置 -----------------------------
 
 # 定义方向分箱的数量
-NUM_BINS = 36
+NUM_BINS = 72
 
 # 定义用于绘图的特定文件索引和像素坐标
-# 根据您的数据和需求调整这些值
 TARGET_FILE_INDEX = 0  # 从0开始的索引（例如，4对应第5个文件）
-TARGET_ROW = 206        # 从0开始的索引
-TARGET_COL = 59         # 从0开始的索引
+TARGET_ROW = 199       # 从0开始的索引
+TARGET_COL = 204       # 从0开始的索引
 
 # 定义块大小（每个块的行数）
-# 根据系统的内存容量进行调整
 CHUNK_SIZE = 64
 
 # ----------------------------- 开始计时 -----------------------------
@@ -88,7 +86,6 @@ def process_file_numba(e_data, a_data, direction_bins, bin_centers, num_bins):
             for k in range(1, depth):
                 if e_data[i, j, k] < min_height:
                     min_height = e_data[i, j, k]
-            
             # 调整波高并计算能量
             total_energy = 0.0
             energies = np.zeros(depth, dtype=np.float32)
@@ -118,14 +115,25 @@ def process_file_numba(e_data, a_data, direction_bins, bin_centers, num_bins):
                 # 累积能量
                 energy_sum[i, j, bin_idx] += energies[k]
             
-            # 基于最大能量确定主要方向
-            max_bin = 0
-            max_energy = energy_sum[i, j, 0]
-            for b in range(1, num_bins):
-                if energy_sum[i, j, b] > max_energy:
-                    max_energy = energy_sum[i, j, b]
-                    max_bin = b
-            main_dirs[i, j] = bin_centers[max_bin]
+            # 找到最大能量值
+            max_energy = np.max(energy_sum[i, j, :])
+            # 筛选能量大于最大能量值一半的方向
+            relevant_bins = energy_sum[i, j, :] > max_energy / 2
+            
+            # 计算加权平均方向，仅考虑能量大于最大值一半的方向
+            weighted_angle_cos = 0.0
+            weighted_angle_sin = 0.0
+            total_weight = 0.0
+            for b in range(num_bins):
+                if relevant_bins[b]:  # 仅加权考虑能量较大的方向
+                    weighted_angle_cos += energy_sum[i, j, b] * np.cos(bin_centers[b])
+                    weighted_angle_sin += energy_sum[i, j, b] * np.sin(bin_centers[b])
+                    total_weight += energy_sum[i, j, b]
+            
+            if total_weight > 0:
+                main_dirs[i, j] = np.arctan2(weighted_angle_sin, weighted_angle_cos)
+            else:
+                main_dirs[i, j] = 0.0  # 如果没有选择任何方向，返回0（或可以选择其它默认值）
     
     return main_dirs, energy_sum
 
@@ -196,8 +204,6 @@ for file_index in range(len(data_files)):
 
     # 为目标文件中的特定像素生成绘图
     # 根据需要调整 TARGET_FILE_INDEX, TARGET_ROW, 和 TARGET_COL
-    print(file_index)
-    print(TARGET_FILE_INDEX)
     if file_index == TARGET_FILE_INDEX:
         # 确保目标行和列在范围内
         if TARGET_ROW >= energy_distribution.shape[0] or TARGET_COL >= energy_distribution.shape[1]:
@@ -206,14 +212,25 @@ for file_index in range(len(data_files)):
             energy_dist = energy_distribution[TARGET_ROW, TARGET_COL, :]
             main_dir = main_dirs[TARGET_ROW, TARGET_COL]
 
-            plt.figure(figsize=(10, 6))
-            plt.bar(np.degrees(bin_centers), energy_dist, width=10, color='skyblue', edgecolor='black')
-            plt.title(f'Energy Distribution and Main Direction (Row {TARGET_ROW+1}, Column {TARGET_COL+1})')
-            plt.xlabel('Direction (degrees)')
-            plt.ylabel('Normalized Energy')
-            plt.axvline(np.degrees(main_dir), color='red', linestyle='--', label=f'Main Direction: {np.degrees(main_dir):.2f}°')
-            plt.legend()
-            plt.grid(True, linestyle='--', alpha=0.7)
+            # 创建极坐标图
+            fig = plt.figure(figsize=(8, 8))
+            ax = fig.add_subplot(111, polar=True)
+            
+            # 方向分箱的角度和能量
+            angles = bin_centers
+            energies = energy_dist
+
+            # 绘制极坐标条形图
+            ax.bar(angles, energies, width=2*np.pi/NUM_BINS, bottom=0.0, color='skyblue', edgecolor='black')
+
+            # 绘制加权平均主方向
+            ax.plot([main_dir, main_dir], [0, max(energies)], color='red', linestyle='--', label=f'Main Direction: {np.degrees(main_dir):.2f}°')
+
+            ax.set_title(f'Energy Distribution and Main Direction (Row {TARGET_ROW+1}, Column {TARGET_COL+1})')
+            ax.set_xlabel('Direction (radians)')
+            ax.set_ylabel('Normalized Energy')
+            ax.legend()
+
             plt.tight_layout()
             plt.savefig(f'../data/output/distribution_{image_index}_row_{TARGET_ROW+1}_col_{TARGET_COL+1}.png')
             plt.close()
@@ -229,31 +246,11 @@ for file_index in range(len(data_files)):
     # 通过删除大型变量释放内存
     del e_data, a_data, main_dirs, energy_distribution
 
-    # 可选: 强制进行垃圾回收（如有必要，请取消注释）
-    # import gc
-    # gc.collect()
-
 # ----------------------------- 保存结果 -----------------------------
 
 # 将 main_directions 数组保存到 .mat 文件中
 savemat('../data/output/main_directions.mat', {'main_directions': main_directions})
 print("已成功保存主方向数据到 'main_directions.mat'。")
-
-# ----------------------------- 计算并保存 u_main 和 v_main -----------------------------
-
-# 计算水平（u）和垂直（v）分量
-u_main = np.cos(main_directions)
-v_main = np.sin(main_directions)
-
-# 保存 u_main 到 u_main.txt
-# 使用逗号分隔，并保留6位小数
-np.savetxt('u_main.txt', u_main, fmt='%.6f', delimiter=',')
-print("已成功保存水平分量数据到 'u_main.txt'。")
-
-# 保存 v_main 到 v_main.txt
-# 使用逗号分隔，并保留6位小数
-np.savetxt('v_main.txt', v_main, fmt='%.6f', delimiter=',')
-print("已成功保存垂直分量数据到 'v_main.txt'。")
 
 # ----------------------------- 结束计时 -----------------------------
 
