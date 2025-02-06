@@ -61,7 +61,7 @@ if isempty(pathFiles)
 end
 
 % 识别最优路径文件（假设为 path_37.txt）
-optimalPathFileName = 'path_15.txt';
+optimalPathFileName = 'path_9.txt';
 isOptimalPathAvailable = false;
 for i = 1:length(pathFiles)
     if strcmp(pathFiles(i).name, optimalPathFileName)
@@ -71,7 +71,7 @@ for i = 1:length(pathFiles)
 end
 
 %% 3. 读取深度数据
-depthFile = '\\wsl.localhost\ubuntu\home\lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/data/depth_a15_512x512.txt';
+depthFile = '\\wsl.localhost\ubuntu\home\lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/data/dep_shoal_inlet_subset_swapped.txt';
 
 % 检查文件是否存在
 if ~isfile(depthFile)

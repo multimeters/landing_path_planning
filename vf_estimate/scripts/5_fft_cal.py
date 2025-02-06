@@ -4,7 +4,7 @@ import os
 from scipy.io import loadmat, savemat
 
 # 基本参数
-fs = 10
+fs = 1
 N_1024 = 1024
 rowsPerSegment = 256
 numSegments = 1

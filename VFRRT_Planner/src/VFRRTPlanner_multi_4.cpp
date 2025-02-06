@@ -360,10 +360,10 @@ int main(int argc, char *argv[])
 
     // ===== 1) 读取向量场数据 =====
     Eigen::MatrixXd u_combined = loadMatrixFromFile(
-        "/home/lhl/share/rip/scripts/landing_path_planning/vf_estimate/data/output/vf/u_combined.txt",
+        "/home/lhl/share/rip/scripts/landing_path_planning/vf_estimate/data/output/vf/u_vf.txt",
         256, 512);
     Eigen::MatrixXd v_combined = loadMatrixFromFile(
-        "/home/lhl/share/rip/scripts/landing_path_planning/vf_estimate/data/output/vf/v_combined.txt",
+        "/home/lhl/share/rip/scripts/landing_path_planning/vf_estimate/data/output/vf/v_vf.txt",
         256, 512);
 
     if (u_combined.size() == 0 || v_combined.size() == 0)

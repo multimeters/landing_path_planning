@@ -58,7 +58,7 @@ def generate_mask_files_and_image(
 
 if __name__ == "__main__":
     # Configuration Section
-    INPUT_FILE_PATH = '../data/source/depth_a15_512x512.txt'  # Update this path
+    INPUT_FILE_PATH = '../data/source/dep_shoal_inlet_subset_swapped.txt'  # Update this path
     OUTPUT_DIRECTORY = '../data/processing/mask'               # Desired output directory
     THRESHOLD_VALUE = 0.1                       # Threshold for mask generation
     NUM_ROWS = 256                                  # Number of rows in input data

@@ -86,7 +86,7 @@ def save_sampled_points(sample_points, output_file):
         raise
 
 def main():
-    depth_file = "../data/depth_a15_512x512.txt"
+    depth_file = "../data/dep_shoal_inlet_subset_swapped.txt"
     output_file = "../data/sampled_coastline.txt"
 
     if not os.path.exists(depth_file):

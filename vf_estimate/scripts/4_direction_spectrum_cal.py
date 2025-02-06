@@ -17,8 +17,8 @@ NUM_BINS = 72
 
 # 定义用于绘图的特定文件索引和像素坐标
 TARGET_FILE_INDEX = 0  # 从0开始的索引（例如，4对应第5个文件）
-TARGET_ROW = 199       # 从0开始的索引
-TARGET_COL = 204       # 从0开始的索引
+TARGET_ROW = 234      # 从0开始的索引
+TARGET_COL = 149        # 从0开始的索引
 
 # 定义块大小（每个块的行数）
 CHUNK_SIZE = 64

@@ -44,7 +44,7 @@ def compute_expression(input_txt, output_mat):
 
 if __name__ == "__main__":
     # 输入和输出文件名
-    input_txt = '../data/source/depth_a15_512x512.txt'       # 替换为您的输入文件名
+    input_txt = '../data/source/dep_shoal_inlet_subset_swapped.txt'       # 替换为您的输入文件名
     output_mat = '../data/processing/k.mat' # 替换为您希望的输出文件名
 
     compute_expression(input_txt, output_mat)

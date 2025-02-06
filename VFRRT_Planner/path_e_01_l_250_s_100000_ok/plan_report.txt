@@ -1,0 +1,522 @@
+=== VFRRT Planner Report ===
+[Info] 程序开始运行
+[Info] Exploration: 0.1
+[Info] Initial Lambda: 250
+[Info] Initial Lambda Samples: 100000
+[Info] 使用的最大并发线程数: 8
+[Info] 路径 0 开始规划, 目标:(134.25, 510)
+[Info] 路径 2 开始规划, 目标:(134.25, 500)
+[Info] 路径 3 开始规划, 目标:(134.25, 495)
+[Info] 路径 1 开始规划, 目标:(134.25, 505)
+[Info] 路径 4 开始规划, 目标:(134.25, 490)
+[Info] 路径 5 开始规划, 目标:(134.25, 485)
+[Info] 路径 6 开始规划, 目标:(134.25, 480)
+[Info] 路径 7 开始规划, 目标:(134.25, 475)
+[Info] 路径 3 找到近似解。
+[Info] 路径 3 上游成本: 0.0991842
+[Info] 路径 3 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_3.txt
+[Info] 路径 7 找到近似解。
+[Info] 路径 7 上游成本: 0.0817419
+[Info] 路径 7 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_7.txt
+[Info] 路径 4 找到近似解。
+[Info] 路径 4 上游成本: 0.103411
+[Info] 路径 4 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_4.txt
+[Info] 路径 2 找到近似解。
+[Info] 路径 2 上游成本: 0.0849948
+[Info] 路径 2 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_2.txt
+[Info] 路径 5 找到近似解。
+[Info] 路径 5 上游成本: 0.082681
+[Info] 路径 5 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_5.txt
+[Info] 路径 0 找到近似解。
+[Info] 路径 0 上游成本: 0.368519
+[Info] 路径 0 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_0.txt
+[Info] 路径 6 找到近似解。
+[Info] 路径 6 上游成本: 0.0863353
+[Info] 路径 6 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_6.txt
+[Info] 路径 1 找到近似解。
+[Info] 路径 1 上游成本: 0.102472
+[Info] 路径 1 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_1.txt
+[Info] 路径 3 规划完成。
+[Info] 路径 7 规划完成。
+[Info] 路径 4 规划完成。
+[Info] 路径 2 规划完成。
+[Info] 路径 5 规划完成。
+[Info] 路径 0 规划完成。
+[Info] 路径 6 规划完成。
+[Info] 路径 1 规划完成。
+[Info] 路径 8 开始规划, 目标:(134.25, 470)
+[Info] 路径 10 开始规划, 目标:(134.25, 460)
+[Info] 路径 11 开始规划, 目标:(134.25, 455)
+[Info] 路径 9 开始规划, 目标:(134.25, 465)
+[Info] 路径 12 开始规划, 目标:(134.25, 450)
+[Info] 路径 13 开始规划, 目标:(134.25, 445)
+[Info] 路径 14 开始规划, 目标:(134.25, 440)
+[Info] 路径 15 开始规划, 目标:(134.25, 435)
+[Info] 路径 12 找到近似解。
+[Info] 路径 12 上游成本: 0.0685518
+[Info] 路径 12 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_12.txt
+[Info] 路径 13 找到近似解。
+[Info] 路径 13 上游成本: 0.0689023
+[Info] 路径 13 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_13.txt
+[Info] 路径 14 找到近似解。
+[Info] 路径 14 上游成本: 0.0689422
+[Info] 路径 14 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_14.txt
+[Info] 路径 8 找到近似解。
+[Info] 路径 8 上游成本: 0.0780774
+[Info] 路径 8 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_8.txt
+[Info] 路径 15 找到近似解。
+[Info] 路径 15 上游成本: 0.0710881
+[Info] 路径 15 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_15.txt
+[Info] 路径 11 找到近似解。
+[Info] 路径 11 上游成本: 0.0674776
+[Info] 路径 11 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_11.txt
+[Info] 路径 12 规划完成。
+[Info] 路径 9 找到近似解。
+[Info] 路径 9 上游成本: 0.0697073
+[Info] 路径 9 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_9.txt
+[Info] 路径 10 找到近似解。
+[Info] 路径 10 上游成本: 0.0868089
+[Info] 路径 10 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_10.txt
+[Info] 路径 13 规划完成。
+[Info] 路径 14 规划完成。
+[Info] 路径 8 规划完成。
+[Info] 路径 15 规划完成。
+[Info] 路径 11 规划完成。
+[Info] 路径 9 规划完成。
+[Info] 路径 10 规划完成。
+[Info] 路径 16 开始规划, 目标:(134.25, 430)
+[Info] 路径 17 开始规划, 目标:(134.25, 425)
+[Info] 路径 18 开始规划, 目标:(134.25, 420)
+[Info] 路径 19 开始规划, 目标:(134.25, 415)
+[Info] 路径 21 开始规划, 目标:(134.25, 405)
+[Info] 路径 20 开始规划, 目标:(134.25, 410)
+[Info] 路径 22 开始规划, 目标:(134.25, 400)
+[Info] 路径 23 开始规划, 目标:(134.25, 395)
+[Info] 路径 16 找到近似解。
+[Info] 路径 16 上游成本: 0.0703329
+[Info] 路径 16 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_16.txt
+[Info] 路径 16 规划完成。
+[Info] 路径 19 找到近似解。
+[Info] 路径 19 上游成本: 0.0734883
+[Info] 路径 19 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_19.txt
+[Info] 路径 21 找到近似解。
+[Info] 路径 21 上游成本: 0.0986833
+[Info] 路径 21 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_21.txt
+[Info] 路径 20 找到近似解。
+[Info] 路径 20 上游成本: 0.0746521
+[Info] 路径 20 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_20.txt
+[Info] 路径 18 找到近似解。
+[Info] 路径 18 上游成本: 0.0734552
+[Info] 路径 18 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_18.txt
+[Info] 路径 17 找到近似解。
+[Info] 路径 17 上游成本: 0.0718837
+[Info] 路径 17 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_17.txt
+[Info] 路径 22 找到近似解。
+[Info] 路径 22 上游成本: 0.073908
+[Info] 路径 22 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_22.txt
+[Info] 路径 23 找到近似解。
+[Info] 路径 23 上游成本: 0.105685
+[Info] 路径 23 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_23.txt
+[Info] 路径 19 规划完成。
+[Info] 路径 24 开始规划, 目标:(134.25, 390)
+[Info] 路径 21 规划完成。
+[Info] 路径 20 规划完成。
+[Info] 路径 18 规划完成。
+[Info] 路径 17 规划完成。
+[Info] 路径 22 规划完成。
+[Info] 路径 23 规划完成。
+[Info] 路径 25 开始规划, 目标:(134.25, 385)
+[Info] 路径 27 开始规划, 目标:(134.25, 375)
+[Info] 路径 26 开始规划, 目标:(134.25, 380)
+[Info] 路径 28 开始规划, 目标:(134.25, 370)
+[Info] 路径 29 开始规划, 目标:(134.25, 365)
+[Info] 路径 30 开始规划, 目标:(134.25, 360)
+[Info] 路径 31 开始规划, 目标:(134.25, 355)
+[Info] 路径 24 找到近似解。
+[Info] 路径 24 上游成本: 0.0941804
+[Info] 路径 24 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_24.txt
+[Info] 路径 24 规划完成。
+[Info] 路径 26 找到近似解。
+[Info] 路径 26 上游成本: 0.0880135
+[Info] 路径 26 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_26.txt
+[Info] 路径 25 找到近似解。
+[Info] 路径 25 上游成本: 0.0998637
+[Info] 路径 25 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_25.txt
+[Info] 路径 31 找到近似解。
+[Info] 路径 31 上游成本: 0.096375
+[Info] 路径 31 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_31.txt
+[Info] 路径 27 找到近似解。
+[Info] 路径 27 上游成本: 0.0861938
+[Info] 路径 27 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_27.txt
+[Info] 路径 28 找到近似解。
+[Info] 路径 28 上游成本: 0.103399
+[Info] 路径 28 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_28.txt
+[Info] 路径 29 找到近似解。
+[Info] 路径 29 上游成本: 0.0947596
+[Info] 路径 29 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_29.txt
+[Info] 路径 30 找到近似解。
+[Info] 路径 30 上游成本: 0.0863639
+[Info] 路径 30 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_30.txt
+[Info] 路径 26 规划完成。
+[Info] 路径 32 开始规划, 目标:(134.25, 350)
+[Info] 路径 25 规划完成。
+[Info] 路径 31 规划完成。
+[Info] 路径 27 规划完成。
+[Info] 路径 28 规划完成。
+[Info] 路径 29 规划完成。
+[Info] 路径 30 规划完成。
+[Info] 路径 33 开始规划, 目标:(134.25, 345)
+[Info] 路径 34 开始规划, 目标:(134.25, 340)
+[Info] 路径 35 开始规划, 目标:(134.25, 335)
+[Info] 路径 36 开始规划, 目标:(134.25, 330)
+[Info] 路径 37 开始规划, 目标:(134.25, 325)
+[Info] 路径 39 开始规划, 目标:(134.25, 315)
+[Info] 路径 38 开始规划, 目标:(134.25, 320)
+[Info] 路径 32 找到近似解。
+[Info] 路径 32 上游成本: 0.0930016
+[Info] 路径 32 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_32.txt
+[Info] 路径 32 规划完成。
+[Info] 路径 33 找到近似解。
+[Info] 路径 33 上游成本: 0.104263
+[Info] 路径 33 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_33.txt
+[Info] 路径 34 找到近似解。
+[Info] 路径 34 上游成本: 0.0865316
+[Info] 路径 34 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_34.txt
+[Info] 路径 36 找到近似解。
+[Info] 路径 36 上游成本: 0.0903279
+[Info] 路径 36 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_36.txt
+[Info] 路径 35 找到近似解。
+[Info] 路径 35 上游成本: 0.0853296
+[Info] 路径 35 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_35.txt
+[Info] 路径 40 开始规划, 目标:(134.25, 310)
+[Info] 路径 33 规划完成。
+[Info] 路径 39 找到近似解。
+[Info] 路径 39 上游成本: 0.082531
+[Info] 路径 39 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_39.txt
+[Info] 路径 37 找到近似解。
+[Info] 路径 37 上游成本: 0.0814202
+[Info] 路径 37 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_37.txt
+[Info] 路径 38 找到近似解。
+[Info] 路径 38 上游成本: 0.0819011
+[Info] 路径 38 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_38.txt
+[Info] 路径 34 规划完成。
+[Info] 路径 36 规划完成。
+[Info] 路径 35 规划完成。
+[Info] 路径 39 规划完成。
+[Info] 路径 41 开始规划, 目标:(134.25, 305)
+[Info] 路径 37 规划完成。
+[Info] 路径 38 规划完成。
+[Info] 路径 42 开始规划, 目标:(134.25, 300)
+[Info] 路径 43 开始规划, 目标:(134.25, 295)
+[Info] 路径 45 开始规划, 目标:(134.25, 285)
+[Info] 路径 46 开始规划, 目标:(134.25, 280)
+[Info] 路径 44 开始规划, 目标:(134.25, 290)
+[Info] 路径 47 开始规划, 目标:(134.25, 275)
+[Info] 路径 40 找到近似解。
+[Info] 路径 40 上游成本: 0.0806019
+[Info] 路径 40 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_40.txt
+[Info] 路径 40 规划完成。
+[Info] 路径 41 找到近似解。
+[Info] 路径 41 上游成本: 0.082737
+[Info] 路径 41 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_41.txt
+[Info] 路径 41 规划完成。
+[Info] 路径 48 开始规划, 目标:(134.25, 270)
+[Info] 路径 42 找到近似解。
+[Info] 路径 42 上游成本: 0.0885229
+[Info] 路径 42 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_42.txt
+[Info] 路径 43 找到近似解。
+[Info] 路径 43 上游成本: 0.0833078
+[Info] 路径 43 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_43.txt
+[Info] 路径 47 找到近似解。
+[Info] 路径 47 上游成本: 0.0826879
+[Info] 路径 47 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_47.txt
+[Info] 路径 45 找到近似解。
+[Info] 路径 45 上游成本: 0.0830066
+[Info] 路径 45 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_45.txt
+[Info] 路径 46 找到近似解。
+[Info] 路径 46 上游成本: 0.0846551
+[Info] 路径 46 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_46.txt
+[Info] 路径 44 找到近似解。
+[Info] 路径 44 上游成本: 0.0837507
+[Info] 路径 44 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_44.txt
+[Info] 路径 42 规划完成。
+[Info] 路径 49 开始规划, 目标:(134.25, 265)
+[Info] 路径 43 规划完成。
+[Info] 路径 47 规划完成。
+[Info] 路径 45 规划完成。
+[Info] 路径 46 规划完成。
+[Info] 路径 44 规划完成。
+[Info] 路径 50 开始规划, 目标:(134.25, 260)
+[Info] 路径 51 开始规划, 目标:(134.25, 255)
+[Info] 路径 52 开始规划, 目标:(134.25, 250)
+[Info] 路径 54 开始规划, 目标:(134.25, 240)
+[Info] 路径 53 开始规划, 目标:(134.25, 245)
+[Info] 路径 55 开始规划, 目标:(134.25, 235)
+[Info] 路径 48 找到近似解。
+[Info] 路径 48 上游成本: 0.0854693
+[Info] 路径 48 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_48.txt
+[Info] 路径 48 规划完成。
+[Info] 路径 56 开始规划, 目标:(134.25, 230)
+[Info] 路径 49 找到近似解。
+[Info] 路径 49 上游成本: 0.0844815
+[Info] 路径 49 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_49.txt
+[Info] 路径 49 规划完成。
+[Info] 路径 54 找到近似解。
+[Info] 路径 54 上游成本: 0.0931225
+[Info] 路径 54 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_54.txt
+[Info] 路径 51 找到近似解。
+[Info] 路径 51 上游成本: 0.0856561
+[Info] 路径 51 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_51.txt
+[Info] 路径 50 找到近似解。
+[Info] 路径 50 上游成本: 0.0907612
+[Info] 路径 50 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_50.txt
+[Info] 路径 52 找到近似解。
+[Info] 路径 52 上游成本: 0.0965565
+[Info] 路径 52 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_52.txt
+[Info] 路径 53 找到近似解。
+[Info] 路径 53 上游成本: 0.0975944
+[Info] 路径 53 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_53.txt
+[Info] 路径 55 找到近似解。
+[Info] 路径 55 上游成本: 0.10401
+[Info] 路径 55 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_55.txt
+[Info] 路径 54 规划完成。
+[Info] 路径 57 开始规划, 目标:(134.25, 225)
+[Info] 路径 51 规划完成。
+[Info] 路径 50 规划完成。
+[Info] 路径 52 规划完成。
+[Info] 路径 53 规划完成。
+[Info] 路径 55 规划完成。
+[Info] 路径 59 开始规划, 目标:(134.25, 215)
+[Info] 路径 58 开始规划, 目标:(134.25, 220)
+[Info] 路径 60 开始规划, 目标:(134.25, 210)
+[Info] 路径 63 开始规划, 目标:(134.25, 195)
+[Info] 路径 62 开始规划, 目标:(134.25, 200)
+[Info] 路径 61 开始规划, 目标:(134.25, 205)
+[Info] 路径 56 找到近似解。
+[Info] 路径 56 上游成本: 0.0998804
+[Info] 路径 56 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_56.txt
+[Info] 路径 56 规划完成。
+[Info] 路径 64 开始规划, 目标:(134.25, 190)
+[Info] 路径 57 找到近似解。
+[Info] 路径 57 上游成本: 0.104912
+[Info] 路径 57 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_57.txt
+[Info] 路径 57 规划完成。
+[Info] 路径 58 找到近似解。
+[Info] 路径 58 上游成本: 0.108552
+[Info] 路径 58 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_58.txt
+[Info] 路径 59 找到近似解。
+[Info] 路径 59 上游成本: 0.112663
+[Info] 路径 59 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_59.txt
+[Info] 路径 61 找到近似解。
+[Info] 路径 61 上游成本: 0.116319
+[Info] 路径 61 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_61.txt
+[Info] 路径 63 找到近似解。
+[Info] 路径 63 上游成本: 0.11139
+[Info] 路径 63 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_63.txt
+[Info] 路径 60 找到近似解。
+[Info] 路径 60 上游成本: 0.113523
+[Info] 路径 60 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_60.txt
+[Info] 路径 62 找到近似解。
+[Info] 路径 62 上游成本: 0.120036
+[Info] 路径 62 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_62.txt
+[Info] 路径 65 开始规划, 目标:(134.25, 185)
+[Info] 路径 58 规划完成。
+[Info] 路径 59 规划完成。
+[Info] 路径 61 规划完成。
+[Info] 路径 63 规划完成。
+[Info] 路径 60 规划完成。
+[Info] 路径 62 规划完成。
+[Info] 路径 66 开始规划, 目标:(134.25, 180)
+[Info] 路径 68 开始规划, 目标:(134.25, 170)
+[Info] 路径 67 开始规划, 目标:(134.25, 175)
+[Info] 路径 69 开始规划, 目标:(134.25, 165)
+[Info] 路径 71 开始规划, 目标:(134.25, 155)
+[Info] 路径 70 开始规划, 目标:(134.25, 160)
+[Info] 路径 64 找到近似解。
+[Info] 路径 64 上游成本: 0.119979
+[Info] 路径 64 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_64.txt
+[Info] 路径 64 规划完成。
+[Info] 路径 72 开始规划, 目标:(134.25, 150)
+[Info] 路径 65 找到近似解。
+[Info] 路径 65 上游成本: 0.119324
+[Info] 路径 65 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_65.txt
+[Info] 路径 65 规划完成。
+[Info] 路径 68 找到近似解。
+[Info] 路径 68 上游成本: 0.131763
+[Info] 路径 68 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_68.txt
+[Info] 路径 69 找到近似解。
+[Info] 路径 69 上游成本: 0.139962
+[Info] 路径 69 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_69.txt
+[Info] 路径 67 找到近似解。
+[Info] 路径 67 上游成本: 0.121812
+[Info] 路径 67 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_67.txt
+[Info] 路径 66 找到近似解。
+[Info] 路径 66 上游成本: 0.124514
+[Info] 路径 66 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_66.txt
+[Info] 路径 70 找到近似解。
+[Info] 路径 70 上游成本: 0.138942
+[Info] 路径 70 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_70.txt
+[Info] 路径 71 找到近似解。
+[Info] 路径 71 上游成本: 0.138863
+[Info] 路径 71 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_71.txt
+[Info] 路径 68 规划完成。
+[Info] 路径 73 开始规划, 目标:(134.25, 145)
+[Info] 路径 69 规划完成。
+[Info] 路径 67 规划完成。
+[Info] 路径 66 规划完成。
+[Info] 路径 70 规划完成。
+[Info] 路径 71 规划完成。
+[Info] 路径 74 开始规划, 目标:(134.25, 140)
+[Info] 路径 75 开始规划, 目标:(134.25, 135)
+[Info] 路径 77 开始规划, 目标:(134.25, 125)
+[Info] 路径 76 开始规划, 目标:(134.25, 130)
+[Info] 路径 79 开始规划, 目标:(134.25, 115)
+[Info] 路径 78 开始规划, 目标:(134.25, 120)
+[Info] 路径 72 找到近似解。
+[Info] 路径 72 上游成本: 0.129851
+[Info] 路径 72 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_72.txt
+[Info] 路径 72 规划完成。
+[Info] 路径 80 开始规划, 目标:(134.25, 110)
+[Info] 路径 73 找到近似解。
+[Info] 路径 73 上游成本: 0.135717
+[Info] 路径 73 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_73.txt
+[Info] 路径 73 规划完成。
+[Info] 路径 75 找到近似解。
+[Info] 路径 75 上游成本: 0.642669
+[Info] 路径 75 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_75.txt
+[Info] 路径 74 找到近似解。
+[Info] 路径 74 上游成本: 0.175716
+[Info] 路径 74 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_74.txt
+[Info] 路径 76 找到近似解。
+[Info] 路径 76 上游成本: 0.134584
+[Info] 路径 76 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_76.txt
+[Info] 路径 78 找到近似解。
+[Info] 路径 78 上游成本: 0.146651
+[Info] 路径 78 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_78.txt
+[Info] 路径 77 找到近似解。
+[Info] 路径 77 上游成本: 0.222181
+[Info] 路径 77 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_77.txt
+[Info] 路径 79 找到近似解。
+[Info] 路径 79 上游成本: 0.346373
+[Info] 路径 79 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_79.txt
+[Info] 路径 75 规划完成。
+[Info] 路径 81 开始规划, 目标:(134.25, 105)
+[Info] 路径 74 规划完成。
+[Info] 路径 76 规划完成。
+[Info] 路径 79 规划完成。
+[Info] 路径 78 规划完成。
+[Info] 路径 77 规划完成。
+[Info] 路径 83 开始规划, 目标:(134.25, 95)
+[Info] 路径 85 开始规划, 目标:(134.25, 85)
+[Info] 路径 82 开始规划, 目标:(134.25, 100)
+[Info] 路径 84 开始规划, 目标:(134.25, 90)
+[Info] 路径 86 开始规划, 目标:(134.25, 80)
+[Info] 路径 87 开始规划, 目标:(134.25, 75)
+[Info] 路径 80 找到近似解。
+[Info] 路径 80 上游成本: 0.157241
+[Info] 路径 80 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_80.txt
+[Info] 路径 80 规划完成。
+[Info] 路径 88 开始规划, 目标:(134.25, 70)
+[Info] 路径 81 找到近似解。
+[Info] 路径 81 上游成本: 0.228902
+[Info] 路径 81 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_81.txt
+[Info] 路径 81 规划完成。
+[Info] 路径 85 找到近似解。
+[Info] 路径 85 上游成本: 1.44729
+[Info] 路径 85 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_85.txt
+[Info] 路径 82 找到近似解。
+[Info] 路径 82 上游成本: 0.251978
+[Info] 路径 82 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_82.txt
+[Info] 路径 84 找到近似解。
+[Info] 路径 84 上游成本: 0.323576
+[Info] 路径 84 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_84.txt
+[Info] 路径 87 找到近似解。
+[Info] 路径 87 上游成本: 0.291397
+[Info] 路径 87 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_87.txt
+[Info] 路径 83 找到近似解。
+[Info] 路径 83 上游成本: 0.349204
+[Info] 路径 83 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_83.txt
+[Info] 路径 86 找到近似解。
+[Info] 路径 86 上游成本: 0.326608
+[Info] 路径 86 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_86.txt
+[Info] 路径 85 规划完成。
+[Info] 路径 89 开始规划, 目标:(134.25, 65)
+[Info] 路径 82 规划完成。
+[Info] 路径 84 规划完成。
+[Info] 路径 87 规划完成。
+[Info] 路径 83 规划完成。
+[Info] 路径 86 规划完成。
+[Info] 路径 90 开始规划, 目标:(134.25, 60)
+[Info] 路径 91 开始规划, 目标:(134.25, 55)
+[Info] 路径 94 开始规划, 目标:(134.25, 40)
+[Info] 路径 93 开始规划, 目标:(134.25, 45)
+[Info] 路径 92 开始规划, 目标:(134.25, 50)
+[Info] 路径 95 开始规划, 目标:(134.25, 35)
+[Info] 路径 91 找到精确解。
+[Info] 路径 91 上游成本: 0.870633
+[Info] 路径 91 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_91.txt
+[Info] 路径 91 规划完成。
+[Info] 路径 96 开始规划, 目标:(134.25, 30)
+[Info] 路径 94 找到精确解。
+[Info] 路径 94 上游成本: 0.979248
+[Info] 路径 94 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_94.txt
+[Info] 路径 94 规划完成。
+[Info] 路径 97 开始规划, 目标:(134.25, 25)
+[Info] 路径 93 找到精确解。
+[Info] 路径 93 上游成本: 1.0522
+[Info] 路径 93 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_93.txt
+[Info] 路径 93 规划完成。
+[Info] 路径 98 开始规划, 目标:(134.25, 20)
+[Info] 路径 95 找到精确解。
+[Info] 路径 95 上游成本: 1.84877
+[Info] 路径 95 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_95.txt
+[Info] 路径 95 规划完成。
+[Info] 路径 99 开始规划, 目标:(134.25, 15)
+[Info] 路径 92 找到精确解。
+[Info] 路径 92 上游成本: 1.19197
+[Info] 路径 92 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_92.txt
+[Info] 路径 92 规划完成。
+[Info] 路径 100 开始规划, 目标:(134.25, 10)
+[Info] 路径 88 找到近似解。
+[Info] 路径 88 上游成本: 0.380441
+[Info] 路径 88 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_88.txt
+[Info] 路径 88 规划完成。
+[Info] 路径 101 开始规划, 目标:(134.25, 5)
+[Info] 路径 89 找到近似解。
+[Info] 路径 89 上游成本: 1.28589
+[Info] 路径 89 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_89.txt
+[Info] 路径 90 找到近似解。
+[Info] 路径 90 上游成本: 1.39598
+[Info] 路径 90 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_90.txt
+[Info] 路径 89 规划完成。
+[Info] 路径 90 规划完成。
+[Info] 路径 102 开始规划, 目标:(134.25, 0)
+[Info] 路径 97 找到精确解。
+[Info] 路径 97 上游成本: 0.543099
+[Info] 路径 97 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_97.txt
+[Info] 路径 97 规划完成。
+[Info] 路径 96 找到精确解。
+[Info] 路径 96 上游成本: 0.929956
+[Info] 路径 96 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_96.txt
+[Info] 路径 96 规划完成。
+[Info] 路径 98 找到精确解。
+[Info] 路径 98 上游成本: 0.769652
+[Info] 路径 98 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_98.txt
+[Info] 路径 98 规划完成。
+[Info] 路径 100 找到精确解。
+[Info] 路径 100 上游成本: 0.80131
+[Info] 路径 100 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_100.txt
+[Info] 路径 100 规划完成。
+[Info] 路径 102 找到精确解。
+[Info] 路径 102 上游成本: 0.481483
+[Info] 路径 102 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_102.txt
+[Info] 路径 102 规划完成。
+[Info] 路径 101 找到精确解。
+[Info] 路径 101 上游成本: 1.0414
+[Info] 路径 101 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_101.txt
+[Info] 路径 101 规划完成。
+[Info] 路径 99 找到精确解。
+[Info] 路径 99 上游成本: 0.79752
+[Info] 路径 99 将保存到: /home/lhl/share/rip/scripts/landing_path_planning/VFRRT_Planner/path/path_99.txt
+[Info] 路径 99 规划完成。
+[Info] 规划结束，程序退出。
